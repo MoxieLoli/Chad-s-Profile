@@ -2,9 +2,6 @@
 <html>
   <style>
   .bobir {
-    animation-fill-mode: forwards;
-    animation-name: fade;
-    animation-duration: 2s;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     cursor: pointer;
   }
@@ -12,20 +9,105 @@
     transform: scale(1.03);
     filter: brightness(1.5);
   }
-  @keyframes fade {
-    0% {
-      margin-top: -3px;
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-      margin-top: 3px;
-    }
-  }
     .bungee-spice-regular {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
+    }
+    .gif1 {
+    top: 400px;
+    justify-content: center;
+    align-items: center;
+    left: -100px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -1;
+    width: 200px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+      .gif2 {
+    top: 500px;
+    justify-content: center;
+    align-items: center;
+    left: -20px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -2;
+    width: 170px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+        .gif3 {
+    top: 300px;
+    justify-content: center;
+    align-items: center;
+    left: -20px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -2;
+    width: 170px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+      .gif4 {
+    top: 400px;
+    justify-content: center;
+    align-items: center;
+    right: -100px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -1;
+    width: 200px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+      .gif5 {
+    top: 500px;
+    justify-content: center;
+    align-items: center;
+    right: -20px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -2;
+    width: 170px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+        .gif6 {
+    top: 300px;
+    justify-content: center;
+    align-items: center;
+    right: -20px;
+    position: absolute;
+    display: flex;
+    margin: auto;
+    z-index: -2;
+    width: 170px;
+    height: auto;
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
   </style>
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,14 +119,14 @@
 </head>
 <body style="font-family: Bungee Spice; overflow-y: scroll; background-color: #87CEEB;">
   </div>
-<div style="display: inline-block display: flex; flex-direction: column; justify-content: align; align-items: center; height : 40vh;"><marquee class="bobir" behavior="scroll" loop="infinite" direction="left" scrollamount="1200" style="font-size: 20px; border: 3px solid black; border-radius: 30px; background-color: red;">ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学ダークマンゴー心理学</marquee></marquee>
+<div style="display: inline-block display: flex; flex-direction: column; justify-content: align; align-items: center; height : 40vh;">
   <h2 class="bobir" style="
     text-align: center;
     font-size: 60px;
     width: fit-content;
     border: 5px solid black;
-    border-radius: 25px;
-    background-color: #368deb;;
+    border-radius: 10px;
+    background-color: #368deb;
     padding: 10px;
     margin: auto;
     -webkit-text-stroke: 2px black;
@@ -61,11 +143,17 @@
   ">
     ↓↓↓
   </h2>
+  <img src="assets/images__1_-removebg-preview.png" class="gif1" class="bobir">
+  <img src="assets/images__1_-removebg-preview.png" class="gif2" class="bobir">
+  <img src="assets/images__1_-removebg-preview.png" class="gif3" class="bobir">
+  <img src="assets/images__1_-removebg-preview.png" class="gif4" class="bobir">
+  <img src="assets/images__1_-removebg-preview.png" class="gif5" class="bobir">
+  <img src="assets/images__1_-removebg-preview.png" class="gif6" class="bobir">
 </div>
   <br>
   <br>
   <br>
-<div class="bobir" style="width: 160px; height: 160px; border: 3px solid black; border-radius: 100px; overflow: hidden; margin-bottom: 50px; margin-left: 50px;">
+<div class="bobir" style="width: 160px; height: 160px; border: 3px solid black; border-radius: 100px; overflow: hidden; margin-left: 50px;">
     <img src="assets/bruski.jpg" style="width: 100%; height: 100%; object-fit: cover;">
 </div>
 <div class="bobir" style="display: flex; align-items: flex-start; gap: 50px;width: fit-content; margin-top: 60px; padding: 10px; margin-left: 50px; border: 3px solid black; border-radius: 30px; background-color: #368deb;">
@@ -153,4 +241,4 @@
   </div>
 </div>
 
-</html
+</html>
