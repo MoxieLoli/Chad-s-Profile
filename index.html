@@ -1,13 +1,26 @@
 <!DOCTYPE HTML>
 <html>
   <style>
-  .bobir {
+    .bobir {
+    animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-duration: 2s;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     cursor: pointer;
   }
   .bobir:hover {
     transform: scale(1.03);
     filter: brightness(1.5);
+  }
+  @keyframes fade {
+    0% {
+      margin-top: -3px;
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      margin-top: 3px;
+    }
   }
     .bungee-spice-regular {
   font-family: "Bungee Spice", sans-serif;
@@ -242,3 +255,4 @@
 </div>
 
 </html>
+
